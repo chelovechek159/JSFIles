@@ -13,10 +13,10 @@ arr = arr.replace(/[^\w\s\-]/g, '')
 let word = arr.split(' ')
 // убираю отдельные тире, чтобы оставить двойные слова
 word = word.filter((n) => {return n != '-'})
-
-word = word.join(' ')
 // 3. удаляю двойные пробелы
-word = word.replace(/\s+/g, ' ')
+word = word.join(' ').replace(/\s+/g, ' ')
+
+
 // 4. разбиваю текст на слова
 let newWord = word.split(' ')
 
