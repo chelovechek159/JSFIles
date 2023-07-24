@@ -11,7 +11,7 @@ arr = text.replace(/\s+/g, ' ')
 
 let newWord = arr.split(' ')
 
-console.log(newWord)
+// console.log(newWord)
 
 let numb = prompt('какое слово под номером?', arr.length-1)
 alert('под номером ' + numb + ' слово ' + newWord[numb-1])
